@@ -40,4 +40,4 @@ for item in waypoints:
         print(value)
 
 
-# print(waypoints)
+print(waypoints)
