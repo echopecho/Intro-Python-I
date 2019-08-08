@@ -33,6 +33,7 @@ for item in waypoints:
         item["name"] = "not a real place"
         item["lon"] = -130
 
+
 # Write a loop that prints out all the field values for all the waypoints
 # YOUR CODE HERE
 for item in waypoints:
