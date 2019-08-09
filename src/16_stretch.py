@@ -1,6 +1,6 @@
 import math
 
-
+# Determine if an input value is prime
 def is_prime(x):
     if x == 1:
         return False
