@@ -15,9 +15,9 @@ print(f1(1, 2))
 # sum. Google for "python arbitrary arguments" and look for "*args"
 
 # YOUR CODE HERE
-def f2(*argv):
+def f2(*args):
     total = 0
-    for num in argv:
+    for num in args:
         if type(num) is list:
             num = sum(num)
         total = total + num
@@ -30,9 +30,10 @@ print(f2(1, 4, -12))  # Should print -7
 print(f2(7, 9, 1, 3, 4, 9, 0))  # Should print 33
 
 a = [7, 6, 5, 4]
+b = [1, 3, 2, 4]
 
 # What thing do you have to add to make this work?
-print(f2(a))  # Should print 22
+print(f2(a, b))  # Should print 32
 
 # Write a function f3 that accepts either one or two arguments. If one argument,
 # it returns that value plus 1. If two arguments, it returns the sum of the
@@ -76,4 +77,4 @@ d = {"monster": "goblin", "hp": 3}
 
 
 # What thing do you have to add to make this work?
-# f4(d)
+f4(d=d)

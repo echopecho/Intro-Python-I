@@ -17,3 +17,4 @@ if is_prime(x):
     print("It is prime")
 else:
     print("It is not prime")
+

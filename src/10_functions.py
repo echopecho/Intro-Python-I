@@ -15,3 +15,4 @@ num = int(num)
 # YOUR CODE HERE
 result = is_even(num)
 print("Even!" if result else "Odd")
+

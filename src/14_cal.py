@@ -21,4 +21,19 @@ and does the following:
 
 import sys
 import calendar
-from datetime import datetime
+from datetime import date
+
+arg_length = len(sys.argv)
+c = calendar.TextCalendar(calendar.SUNDAY)
+
+year = int(sys.argv[2]) if len(sys.argv) == 3 else date.today().year
+month = (
+    list(calendar.month_name).index(sys.argv[1].capitalize())
+    if len(sys.argv) >= 2
+    else date.today().month
+)
+
+if len(sys.argv) > 3:
+    print("Please input only the month and then the year")
+else:
+    print(c.formatmonth(year, month))
